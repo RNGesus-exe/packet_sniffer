@@ -14,7 +14,7 @@ FILE *arrayfile;
 void ProcessPacket(unsigned char*, int);
 void LogPacketFeatures(struct iphdr*, struct tcphdr*);
 
-int main() {
+int sniff_arr() {
     int saddr_size, data_size, sock_raw;
     struct sockaddr saddr;
     unsigned char *buffer = (unsigned char *)malloc(65536); // Buffer to store the packet

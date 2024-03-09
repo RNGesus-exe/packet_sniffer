@@ -17,7 +17,7 @@ void print_ip_header(unsigned char*, int);
 void print_tcp_packet(unsigned char*, int);
 void LogCsvTcpPacket(struct iphdr*, struct tcphdr*);
 
-int main() {
+int print_csv() {
     int saddr_size, data_size, sock_raw;
     struct sockaddr saddr;
     unsigned char *buffer = (unsigned char *)malloc(65536); // Allocate memory for packet capture
